@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "Gmail Address Highlighter",
+  "version": "1.0.0",
+  "description": "Gmailの設定画面で登録済みメールアドレスを強調表示する拡張機能です。",
+  "permissions": [
+    "storage"
+  ],
+  "host_permissions": [
+    "https://mail.google.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://mail.google.com/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "options_page": "options.html"
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Gmail Address Highlighter 設定</title>
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      margin: 20px;
+      line-height: 1.6;
+    }
+    h1 {
+      font-size: 18px;
+      margin-bottom: 8px;
+    }
+    textarea {
+      width: 100%;
+      height: 100px;
+      box-sizing: border-box;
+      font-family: monospace;
+      padding: 8px;
+    }
+    button {
+      margin-top: 8px;
+      padding: 6px 16px;
+      cursor: pointer;
+    }
+    .status {
+      margin-top: 8px;
+      color: #0a7f00;
+      font-size: 13px;
+    }
+    .hint {
+      font-size: 12px;
+      color: #555;
+      margin-top: 8px;
+    }
+    .example {
+      background: #f7f7f7;
+      padding: 8px;
+      border-radius: 4px;
+      font-size: 12px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Gmail Address Highlighter 設定</h1>
+
+  <label for="emails">
+    強調したいメールアドレス（コンマ区切り / 改行も可）
+  </label>
+  <textarea id="emails" placeholder="foo@example.com, bar@example.com"></textarea>
+
+  <br>
+  <button id="save">保存</button>
+  <div id="status" class="status"></div>
+
+  <div class="hint">
+    <p>■ 書き方</p>
+    <div class="example">
+      foo@example.com, bar@example.com, baz+test@sample.co.jp
+    </div>
+    <p>
+      ・「,」（カンマ）や改行で区切ってください。<br>
+      ・Gmailの設定画面（例: アカウントとインポート）を開いたとき、これらのメールアドレスがページ内で黄色ハイライト＋太字で表示されます。
+    </p>
+  </div>
+
+  <script src="options.js"></script>
+</body>
+</html>
