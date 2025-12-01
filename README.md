@@ -1,1 +1,3 @@
-# gmail-address-highlighter
+Gmail で、登録した相手からのメールを強調表示する Chrome 拡張です。
+
+迷惑メールで必要なメールが埋もれる対策としてご利用下さい。
